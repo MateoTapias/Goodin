@@ -1,0 +1,569 @@
+@font-face {
+    font-family: 'Capuche Trial Black';
+    src: url('fonts/CapucheTrial-Black.woff2') format('woff2'),
+         url('fonts/CapucheTrial-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 150px;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Capuche Trial Black", sans-serif;
+    max-width: 1905px; 
+    overflow-x: hidden; 
+} 
+
+#contenedor {
+    background-color: #ffffff;
+    max-width: 1905px;
+    margin: 0 auto;
+}
+
+
+/* NAV */
+#nav {
+    background-color: #dd8141; 
+    width: 100%;
+    height: 91px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+#nav img {
+    height: 60px;
+    width: 198px;
+    margin-right: 40px;
+}
+
+#ulnav {
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+#linav {
+    list-style-type: none;
+}
+
+#ulnav a {
+    display: block;
+    color: #ffffff;
+    font-size: 19px;
+    font-family: "Capuche Trial Black", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+#ulnav a:hover {
+    color: #ffd27f; 
+}
+
+a {
+    display: block;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: 0.3s;
+    font-family: "Capuche Trial Black", sans-serif;
+}
+
+a:hover {
+    color: #e50470;
+}
+
+#banner {
+    background-image: url(imagenes/banner.png);
+    width: 1905px;
+    height: 725px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Pagina principal*/
+#productos, #nosotros, #banner {
+    scroll-margin-top: 120px; 
+}
+
+#productos{
+    background-color: #d37d5b;
+    width: 1908px;
+    height: 700px;
+    margin-top: -140px;
+    margin-left: -3px;
+}
+
+#productos {
+    padding: 60px 40px;
+    background: #fff6ef;
+    text-align: center;
+}
+
+#productos .titulo-seccion {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #5a2c0d;
+    font-family: "Capuche Trial Black", sans-serif;
+}
+
+.ver-mas {
+    margin-top: 30px;
+}
+
+.ver-mas a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #dd8141;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.ver-mas a:hover {
+    background: #b95f21;
+}
+
+
+#nosotros {
+    background-color: #ffffff;
+    width: 1905px;
+    height: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 160px;
+    box-sizing: border-box;
+}
+
+#nosotros1 {
+    max-width: 835px;
+}
+
+#nosotros1 h1 {
+    font-size: 35px;
+    color: #e50470;
+}
+
+#nosotros1 p {
+    font-size: 24px;
+    color: #797979;
+    line-height: 1.5;
+}
+
+#nosotros2 img {
+    height: 190px;
+    width: auto;
+}
+
+.btn-nosotros {
+    margin-top: 20px;
+}
+
+.btn-nosotros a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #5a2c0d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-nosotros a:hover {
+    background: #7a3e12;
+}
+
+
+/*Productos*/
+#postres, #helados, #batidos {
+    padding: 60px 40px;
+    margin: 60px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: "Capuche Trial Black", sans-serif;
+    color: #dd8141;
+}
+
+.grupo-productos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #f6e5d1;
+    color: #5a3a1e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.producto:hover .contenido h2,
+.producto:hover .contenido p {
+    color: #f4f4f4;
+    transition: color 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+}
+
+.producto .contenido {
+    padding: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.producto h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: "Capuche Trial Black", sans-serif;
+    color: #5a3a1e;
+}
+
+.producto p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.img-hover {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    object-fit: cover;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.producto:hover .img-hover {
+    opacity: 1;
+}
+
+
+/*nosotros*/
+#introduccion, 
+#misionvision, 
+#objetivos {
+    max-width: 1600px;
+    margin: 280px auto;   
+    padding: 40px;
+    background-color: #f3e0d2;
+    color: #4a2c1a;          
+    border-radius: 12px;
+    font-family: "Capuche Trial Black", sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#introduccion {
+    margin-top: 145px;      
+    padding: 40px 120px;    
+    background-color: #f5e9df; 
+    border-radius: 12px;
+    text-align: center;      
+}
+
+#introduccion h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #4a2c1a;          
+    font-family: "Capuche Trial Black", sans-serif;
+}
+
+#introduccion p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: #4a2c1a;
+    font-family: "Capuche Trial Black", sans-serif;
+}
+
+#misionvision h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4a2c1a; 
+    text-align: center;
+}
+
+#misionvision{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 160px;
+    gap: 40px;
+    background-color: #fff;
+}
+
+.caja {
+    background-color: #f3e5d0;
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-height: 200px; 
+}
+
+.caja h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4b2e1e;
+    text-align: center;
+}
+
+.caja p, .caja li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #3b2516;
+    text-align: justify;
+}
+
+.caja ul {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.caja ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    #nosotros h1 {
+        font-size: 28px;
+    }
+
+    .caja {
+        padding: 25px;
+    }
+
+    .caja h2 {
+        font-size: 22px;
+    }
+
+    .caja p, .caja li {
+        font-size: 16px;
+    }
+}
+
+#objetivos {
+    background-color: #f9f4f0;
+    color: #4b2c20;
+    padding: 60px 160px;
+    text-align: justify;
+}
+
+#objetivos h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4a2c1a;
+    text-align: center;
+}
+
+#objetivos p, #objetivos li {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/*Contacto */
+#contacto {
+    background-color: #ffffff;
+    width: 1905px;
+    height: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contacto1 {
+    width: 800px;
+    height: auto;
+    margin: 0 auto 30px auto;
+}
+
+#contacto1 h1 {
+    font-size: 40px;
+    font-family: "Capuche Trial Black", sans-serif;
+    color: #bd4314; 
+    margin-bottom: 25px;
+}
+
+#contacto1 p {
+    font-size: 22px;
+    font-family: "Capuche Trial Black", sans-serif;
+    color: #797979;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#formulario {
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#formulario input, 
+#formulario textarea {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #bbbbbb;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: "Capuche Trial Black", sans-serif;
+    color: #333;
+    outline: none;
+}
+
+#formulario input:focus, 
+#formulario textarea:focus {
+    border-color: #e50470; 
+}
+
+#formulario button {
+    width: 200px;
+    padding: 12px;
+    background-color: #bd4314; 
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: "Capuche Trial Black", sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formulario button:hover {
+    background-color: #e50470; 
+}
+
+/* FOOTER */
+#footer {
+    background-color: #dd8141; 
+    max-width: 1905px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    gap: 100px; 
+}
+
+#footer1, #footer2, #footer3, #footer4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* 🔹 centra vertical */
+    align-items: center;      /* 🔹 centra horizontal */
+    height: 100%;
+    min-width: 220px;
+    text-align: center;
+}
+
+#footer1 img {
+    height: 100px;
+    width: 315px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+#footer2 h1, #footer3 h1, #footer4 h1 {
+    font-size: 27px;
+    margin-bottom: 15px;
+    font-family: "Capuche Trial Black", sans-serif;
+    color: #f8af65;
+}
+
+#footer2 h1, #footer3 h1 {
+    margin-bottom: -15px;
+}
+
+
+#footer2 li, #footer3 li {
+    padding: 5px 0;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Capuche Trial Black", sans-serif;
+    transition: 0.3s;
+    list-style-type: none;
+}
+
+#footera{
+    padding: 25px 40px 0 0;
+}
+
+#footer4 {
+    text-align: center;
+}
+
+#footer4 h1 {
+    font-size: 27px;
+    margin-bottom: 10px; 
+    font-family: "Capuche Trial Black", sans-serif;
+    color: #f8af65;
+}
+
+#footer4 a {
+    display: inline-block;   
+    margin: 0 8px;         
+}
+
+#footer4 img {
+    width: 30px;            
+    height: auto;
+    vertical-align: middle;  
+}
+
+
+#footer4 img {
+    height: 45px;
+    width: 45px;
+    border-radius: 25%;
+    transition: 0.3s;
+}
+
+#footer4 img:hover {
+    transform: scale(1.1);
+}
+
+
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div id="contenedor">
+
+        <div id="nav">
+            <img src="imagenes/logo-nav.png" alt="Goodin Logo">
+            <ul id="ulnav">
+                <li id="linav"><a href="index.html">INICIO</a></li>
+                <li id="linav"><a href="productos.html">PRODUCTOS</a></li>
+                <li id="linav"><a href="nosotros.html">NOSOTROS</a></li>
+                <li id="linav"><a href="blog.html">BLOG</a></li> <li id="linav"><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+
+        <div id="blog-container">
+            <h1 class="titulo-seccion">BLOG GOODIN</h1>
+            
+            <div class="grupo-entradas">
+
+                <div class="entrada-blog" id="entrada1">
+                    <div class="contenido-blog">
+                        <h2>1. Comer Dulce Sin Culpa: La Nueva Forma de Cuidarte</h2>
+                        <p>
+                            Explora cómo los postres proteicos están cambiando la idea de “comer saludable”. No es necesario vivir contando calorías para disfrutar de un dulce que aporte vitaminas, proteínas y energía. Goodin nace para quienes quieren estar bien... pero también darse un gusto sin remordimientos.
+                        </p>
+                        <a href="entrada1.html" class="btn-leer-mas">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="entrada-blog" id="entrada2">
+                    <div class="contenido-blog">
+                        <h2>2. Helados que Alimentan: Por Qué Los Postres Fríos Son Mejores</h2>
+                        <p>
+                            Descubre cómo los helados proteicos pueden ser una opción refrescante, rica y nutritiva, ideal para días de trabajo, estudio o descanso. Son perfectos para un estilo de vida sin horarios estrictos.
+                        </p>
+                        <a href="entrada2.html" class="btn-leer-mas">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="entrada-blog" id="entrada3">
+                    <div class="contenido-blog">
+                        <h2>3. Batidos Proteínicos para Personas que No Van al Gym</h2>
+                        <p>
+                            Un blog divertido sobre cómo los batidos proteicos no son solo para atletas. Son perfectos para personas que madrugan, estudian, trabajan, o simplemente quieren algo rico que les dé energía sin complicarse.
+                        </p>
+                        <a href="entrada3.html" class="btn-leer-mas">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="entrada-blog" id="entrada4">
+                    <div class="contenido-blog">
+                        <h2>4. Del Caribe para Tu Cuerpo: La Evolución de los Dulces Costeños</h2>
+                        <p>
+                            Toca el corazón del concepto Goodin: transformar postres costeños tradicionales en opciones saludables sin perder sabor ni identidad. Ideal para atraer a quienes aman los sabores de casa, pero quieren cuidarse.
+                        </p>
+                        <a href="entrada4.html" class="btn-leer-mas">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="entrada-blog" id="entrada5">
+                    <div class="contenido-blog">
+                        <h2>5. Salud Sin Presión: La Guía del Antojo Inteligente</h2>
+                        <p>
+                            Guía suave para quienes buscan bienestar sin obsesionarse. Pequeños cambios, como elegir postres proteicos, pueden mejorar tu energía, saciedad y estado de ánimo sin hacer dietas estrictas.
+                        </p>
+                        <a href="entrada5.html" class="btn-leer-mas">Leer más</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div id="footer1">
+                <img src="imagenes/logo-footer.png" alt="">
+            </div>
+            <div id="footer2">
+                <h1>PRODUCTOS</h1>
+                <ul>
+                    <li id="lifoo"><a href="index.html#postres" id="footera">POSTRES</a></li>
+                    <li id="lifoo"><a href="productos.html#helados" id="footera">HELADOS</a></li>
+                    <li id="lifoo"><a href="productos.html#batidos" id="footera">BATIDOS</a></li>
+                </ul>
+            </div>
+            <div id="footer3">
+                <h1>NOSOTROS</h1>
+                <ul>
+                    <li id="lifoo"><a href="nosotros.html#introduccion" id="footera">INTRODUCCIÓN</a></li>
+                    <li id="lifoo"><a href="nosotros.html#misionvision" id="footera">MISIÓN Y VISIÓN</a></li>
+                    <li id="lifoo"><a href="nosotros.html#objetivo" id="footera">OBJETIVOS</a></li>
+                </ul>
+            </div>
+            <div id="footer4">
+                <h1>SÍGUENOS</h1>
+                <a href="#"><img src="imagenes/face.png" alt="Facebook"></a>
+                <a href="#"><img src="imagenes/ig.png" alt="Instagram"></a>
+                <a href="#"><img src="imagenes/x.png" alt="Twitter"></a>
+            </div>
+        </div>
+
+    </div>
+    <script>
+    window.onload = function() {
+        if (window.location.hash) {
+            window.scrollTo(0, 0);
+            history.replaceState(null, null, window.location.pathname);
+        }
+    };
+    </script>
+</body>
+</html>

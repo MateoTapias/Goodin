@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner de Apertura Goodin</title>
+    <link rel="stylesheet" href="style.css" media="only screen and (min-width:800px)">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div id="contenedor">
+
+        <div id="instagram"><a href="#"><img src="imagenes/ig.png" alt="Instagram"></a></div>
+        <div id="x"><a href="#"><img src="imagenes/x.png" alt="Twitter/X"></a></div>
+        <div id="facebook"><a href="#"><img src="imagenes/face.png" alt="Facebook"></a></div>
+
+        <div id="nav">
+            <img src="imagenes/logo-nav.png" alt="Goodin Logo">
+            <ul id="ulnav">
+                <li id="linav"><a href="index.html#banner">INICIO</a></li>
+                <li id="linav"><a href="index.html#productos">PRODUCTOS</a></li>
+              
+                <li id="linav"><a href="blog.html">BLOG</a></li> 
+                <li id="linav"><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+            <a href="index-en.html" id="language-toggle" class="lang-button">English Version</a>
+        </div>
+        
+        
+        <div id="banner">
+            <div id="banner-texto">
+                <h1 class="banner-title-new">¡Bienvenido a Goodin!</h1> 
+                
+                <p class="banner-subtitle-new">
+                    Descubre nuestro nuevo punto físico y vive el sabor natural.
+                </p>
+
+                <p>
+                    Hemos abierto nuestro sitio web para reforzar nuestra identidad digital. Explora nuestros productos proteicos y encuentra la ubicación de nuestra tienda física.
+                </p>
+                
+                <div class="botones-banner">
+                    <a href="#productos" class="btn-banner">Ver Productos</a>
+                    <a href="#ubicacion" class="btn-banner">Visítanos Ahora</a>
+                </div>
+            </div>
+            <span class="banner-source-attr">Imagen de fondo sacada de Pexels</span>
+        </div>
+        </div>
+
+    <style>
+        #instagram, #x, #facebook {
+            position: fixed;
+            right: 10px; 
+            width: 45px; 
+            height: 45px;
+            z-index: 1001; 
+            border-radius: 50%; 
+            overflow: hidden; 
+            transition: transform 0.3s;
+        }
+        /* ... (Resto de estilos de iconos sociales) ... */
+
+        /* Puedes añadir estilos específicos para los nuevos elementos de texto si lo necesitas: */
+        .banner-title-new {
+            font-size: 3em; /* Ajusta el tamaño */
+            color: #fff;
+        }
+        .banner-subtitle-new {
+            font-size: 1.5em;
+            color: #eee;
+        }
+
+        /* (Solo he dejado los estilos de los iconos sociales por ser código que ya incluías) */
+        #instagram a, #x a, #facebook a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+        }
+
+        #instagram img, #x img, #facebook img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        #instagram {
+            background-image: url(imagenes/ig.png);
+            top: 50%; 
+            transform: translateY(-50px);
+        }
+
+        #x {
+            background-image: url(imagenes/x.png);
+            top: 50%; 
+            transform: translateY(0); 
+        }
+
+        #facebook {
+            background-image: url(imagenes/face.png);
+            top: 50%;
+            transform: translateY(50px); 
+        }
+
+        #instagram:hover, #x:hover, #facebook:hover {
+            transform: scale(1.2); 
+            z-index: 1002; 
+        }
+
+        #instagram:hover {
+            transform: translateY(-50px) scale(1.2);
+        }
+
+        #x:hover {
+            transform: translateY(0) scale(1.2);
+        }
+
+        #facebook:hover {
+            transform: translateY(50px) scale(1.2);
+        }
+    </style>
+
+    <script>
+        window.onload = function() {
+            if (window.location.hash) {
+                window.scrollTo(0, 0);
+                history.replaceState(null, null, window.location.pathname);
+            }
+        };
+    </script>
+
+</body>
+</html>
